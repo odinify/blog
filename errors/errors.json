@@ -1,0 +1,24 @@
+{
+  "errors": {
+    "USER_EXISTS": {
+      "message": {
+        "EN": "User already exists."
+      }
+    },
+    "WRONG_CREDENTIALS": {
+      "message": {
+        "EN": "Username or password is wrong."
+      }
+    },
+    "DEFAULT": {
+      "message": {
+        "EN": "Something went wrong"
+      }
+    },
+    "POST_DOES_NOT_EXIST": {
+      "message": {
+        "EN": "Post does not exist"
+      }
+    }
+  }
+}

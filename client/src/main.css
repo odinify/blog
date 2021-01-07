@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: 'Yekan';
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lalezar', cursive;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #222831;
+}
+
+.header__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand {
+  color: #fff;
+}
+
+.header__menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__item {
+  margin-right: 30px;
+}
+
+.header__link {
+  color: #fff;
+}
+
+/* ===== HOME HERO =====*/
+.hero {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 40px;
+}
+
+.hero__description {
+  font-size: 14px;
+}
+
+/* ===== POSTS SECTION ===== */
+.posts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/* ===== POST CARD ===== */
+.post-card {
+  min-height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.post-card__title {
+  font-size: 25px;
+}
+
+.post-card__summary {
+  font-size: 14px;
+}
+
+.post-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 33px;
+  margin-top: 20px;
+  background-color: #f05454;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* ===== POST HERO ===== */
+.post-hero {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-hero__content {
+  text-align: center;
+}
+
+.post-hero__title {
+  font-size: 45px;
+}
+
+.post-hero__summary {
+  font-size: 16px;
+}
+
+.post-hero__author {
+  font-size: 14px;
+}
+
+.post-hero__author-name {
+  color: #f05454;
+}
+
+/* ===== LOADING ===== */
+.loading {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ===== NOT FOUND ERROR ===== */
+.not-found-error {
+  color: #f05454;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ===== AUTH BACKGROUND ===== */
+.auth-background {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2104&q=80');
+  background-size: cover;
+}
+
+/* ===== AUTH FORM ===== */
+.auth-form {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 50px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.auth-form__label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.auth-form__input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+.auth-form__button {
+  display: block;
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: none;
+  background-color: #f05454;
+  color: #fff;
+  font-family: 'Lalezar', cursive;
+  cursor: pointer;
+}
+
+/* ===== AUTH ERROR ===== */
+.auth-error {
+  color: #f05454;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ===== AUTH SUCCESS ===== */
+.auth-success {
+  color: #16c79a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ===== ADD BUTTON ===== */
+.add-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #16c79a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* ===== NEW POST FORM ===== */
+.new-post__form {
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.new-post__label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.new-post__input {
+  display: block;
+  width: 80%;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.new-post__text-area {
+  display: block;
+  width: 100%;
+  height: 150px;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.new-post__button {
+  display: flex;
+  height: 35px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: #16c79a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 20px;
+  font-family: 'Lalezar', cursive;
+}
+
+/* ===== NEW POST ERROR ===== */
+.new-post__error {
+  color: #f05454;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ===== NEW POST SUCCESS ===== */
+.new-post__success {
+  color: #16c79a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ===== DELETE BUTTON ===== */
+.delete-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f05454;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}

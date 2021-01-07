@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const Application = require('../application');
+const Server = require('../server');
+const Database = require('../database');
+
+const { server: serverConfig } = require('../config');
+const { mongo: mongoConfig } = require('../config');
+
+const application = new Application();
+const server = new Server(application, serverConfig.PORT);
+const database = new Database(mongoConfig.URI);
+
+server.start();
+database.connect();
