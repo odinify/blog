@@ -1,6 +1,4 @@
 import React, { useState, useContext } from 'react';
-import { EditorState } from 'draft-js';
-import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import 'draft-js/dist/Draft.css';
 
@@ -13,10 +11,6 @@ const NewPostPage = () => {
     summary: '',
     markdown: '',
   };
-
-  const [editorState, setEditorState] = React.useState(() =>
-    EditorState.createEmpty()
-  );
 
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
@@ -95,11 +89,6 @@ const NewPostPage = () => {
           onChange={handleChange}
           className="new-post__text-area"
         ></textarea>
-
-        <Editor
-          editorState={editorState}
-          onEditorStateChange={setEditorState}
-        />
 
         <input type="submit" value="ذخیره" className="new-post__button" />
       </form>
